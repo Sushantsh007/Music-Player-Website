@@ -1,0 +1,656 @@
+body{
+    background-color: rgb(13, 9, 39);
+    
+}
+::-webkit-scrollbar {
+    width: 0; 
+     /* Remove scrollbar space */
+    background: transparent;  
+    /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+
+::-webkit-scrollbar-thumb {
+    background: transparent;
+}
+.container{
+    margin-top: 100px;
+}
+
+
+.nav_gola{
+    height:40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: rgb(160, 40, 224);
+    
+}
+
+.nav_bar{
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    background-color: rgb(16, 9, 61);
+
+    z-index: 2;
+}
+.nav_left{
+    display: flex;
+    padding-left: 32px;
+}
+.nav_icon{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav_icon i{
+    color: white;
+    position: relative;
+    left: -34px;
+    top: 0px;
+    font-size: 25px;
+}
+
+.nav_left_text{
+    color: white;
+    margin-left: -16px;
+    padding-top: 3px;
+}
+.nav_left_text p{
+    width: 0px;
+    height: 0px;
+}
+
+#nav_fav{
+    color: white;
+    text-decoration: none;
+    display:flex ;
+    justify-content: center;
+    align-items:center ;
+    margin-left: 120px;
+    
+}
+
+
+
+
+/* nav right portion */
+
+
+.nav_right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#search_btn{
+    color: white;
+    background-color: rgb(58, 19, 113);
+    border: 0px;
+    margin-right: -4px;
+    padding: 10px;
+    border-top-left-radius: 9px;
+    border-bottom-left-radius:9px;
+}
+
+#nav-search{
+    background-color: rgb(58, 19, 113);
+    color: white;
+    padding:10px;
+    margin:0px;
+    border:0px;
+    width: 180px;
+
+}
+
+#nav_right_mic{
+    background-color: rgb(58, 19, 113);
+    color: white;
+    /* padding: 10px; */
+    height: 44px;
+    margin: -8px;
+    border: 0px;
+    border-top-right-radius: 9px;
+    border-bottom-right-radius: 9px;
+    margin-right: 15px;
+}
+
+
+.nav_right_icon{
+    color: white;
+    margin: 10px;
+    font-size: 25px;
+    margin-left: 20px;
+    margin-right: 20px;
+
+}
+
+.nav_right_pic{
+    background-image: url('images/profile\ pic.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-top: 0px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+
+
+/* left wala part */
+
+/* phal row */
+
+#row_1{
+    margin-left: 30px;
+  
+}
+#row_1_col_1{
+    display: flex;
+    justify-content: space-around;
+}
+
+#karan{
+    margin: 10px;
+
+}
+#arijit{
+    margin: 10px;
+}
+#sidhu{
+    margin: 10px;
+}
+
+@keyframes example
+ {
+    from {width:150px;height: 158px;opacity: 1;}
+    to {width:200px;height: 200px;opacity: 0.5;}
+}
+
+
+
+#karan:hover{
+    animation: example 0.8s ;
+    animation-direction: forward;
+    
+}
+
+#arijit:hover{
+    animation: example 0.8s ;
+    animation-direction: forward;
+}
+#sidhu:hover{
+    animation: example 0.8s ;
+    animation-direction: forward;
+}
+
+
+
+/* dusRa row start */
+
+#row_2_heading{
+    margin-top: 20px;
+    position: relative;
+    left: 20px;
+    color: white;
+}
+#row_2{
+    margin-top: 10px;
+}
+#row_3{
+    margin-left: 10px;
+}
+
+.pic{
+    
+    background-image: url(images/diljit.jpg);
+    height: 75px;
+    width: 75px;
+    background-position: center;
+    background-size: cover;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+.left_text h6{
+    margin-top: 30px;
+    margin-bottom: 2px;
+    color: whitesmoke;
+}
+
+.left_text p{
+    color: rgb(71, 79, 86);
+
+}
+
+.rig{
+    margin-left: 10px;
+}
+#rig_a i {
+    color: rgb(71, 79, 86);
+    margin-top: 15px;
+    margin-left: 12px;
+}
+.rig p{
+    color: rgb(207, 222, 234);
+    margin-left: 10px;
+    font-size: 10px;
+}
+
+
+
+/* popular artist section */
+
+.artist_image{
+    width: 150px;
+    height: 125px;
+    border-radius: 50%;
+    margin:2px
+}
+#artistwala_row{
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.xy{
+    margin-left: 18px;
+}
+#artist_images_1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* station wala */
+
+#station_row{
+    /* margin-left: 10px; */
+    display: flex;
+    background-color: rgb(17, 5, 84);
+
+}
+#station_1 img{
+    height: 130px;
+    width: 130px;
+   
+    margin: 20px;
+    margin-left: 5px;
+}
+
+#baki_stations{
+    height: 70px;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(images/love\ sations.jpg);
+    background-position: center;
+    background-size: cover;
+    /* margin: 20px; */
+    border-radius: 50%;
+    padding-top: 20px;
+    margin-left: 25px !important;
+    opacity: 0.5;
+
+}
+#baki_stations_2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(images/retro.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 70px;
+    width: 70px;
+    margin: 10px;
+    margin-left: 20px;
+    border-radius: 50%;
+    opacity: 0.5;
+
+}
+#baki_stations_3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    width: 70px;
+    background-image: url(images/chill\ music.jpg);
+    background-position: center;
+    background-size: cover;
+    margin: 10px;
+    border-radius: 50%;
+    margin-left: 20px;
+    opacity: 0.5;
+
+
+}
+#baki_stations_4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(images/workout.jpg);
+    height: 70px;
+    background-position: center;
+    background-size: cover;
+    width: 70px;
+    margin: 10px;
+    border-radius: 50%;
+    margin-left: 20px;
+    opacity: 0.5;
+
+}
+#baki_stations_5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(images/rock.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 70px;
+    width: 70px;
+    margin: 10px;
+    border-radius: 50%;
+    margin-left: 20px;
+    opacity: 0.5;
+
+}
+#baki_stations_6{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(images/pop.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 70px;
+    width: 70px;
+    margin: 10px;
+    border-radius: 50%;
+    margin-left: 20px;
+    opacity: 0.5;
+
+}
+
+.station_col{
+    margin-top: 45px !important;
+    padding-top: 10px !important;
+    margin-right: 30px!important;
+}
+
+
+/* mood section */
+
+#mood_row{
+    margin-top: 20px;
+}
+
+.mod_image img{
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+}
+
+.mood_type{
+    position: relative;
+    top: -46%;
+    left: 36%;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+
+
+/* latest english ka */
+#abc{
+    width: fit-content;
+}
+#latest{
+    color: beige;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#latest_english{
+    margin-top: -10px;
+}
+
+.lat_img{
+    width: 100%;
+    height: 70%;
+}
+.lat_img img{
+    height: 100%;
+    width: 100%;
+}
+
+.xyz{
+    margin-top: -17px;
+    font-weight: 200;
+    font-size: 15px;
+}
+
+
+
+#latest_hindi{
+    margin-top: 20px;
+}
+
+
+
+/* right wala parrt */
+
+
+/* queue */
+
+
+
+#queue-row{
+    display: flex;
+    justify-content: space-between;
+
+}
+.right{
+    display: flex;
+    /* margin-top: 10px; */
+}
+#drop_p{
+    display: inline;
+    margin-right: 3px;
+}
+
+.right_queue button{
+    border: none !important;
+    background-color: rgb(13, 9, 39) !important;
+    color: green !important;
+
+
+}
+
+#queue_text{
+    font-size: 25px;
+    font-weight: 400;
+}
+
+
+
+/* row-2 */
+
+#row_2_queue{
+    display: flex;
+    justify-content: space-between;
+}
+
+.row_2_queue_left{
+    display: flex;
+    justify-content: space-around;
+
+}
+.row_2_queue_left img{
+    height: 50px;
+    width: 50px;
+
+}
+
+
+#phla_p{
+    margin-top: 10px;
+    margin-right:10px;
+}
+
+.row_text{
+    margin-left: 10px;
+}
+
+#dusra_p{
+    font-weight: 500;
+}
+
+#teesra_p{
+    color: white;
+    margin-top: -15px;
+}
+
+.row_2_queue_right i{
+    /* color: wheat; */
+    /* color: rgb(13, 9, 39); */
+    font-size: 15px;
+    /* border: 2px; */
+    color: rgb(102, 102, 101);
+    margin-top: 15px;
+
+}
+
+#queue_row_99{
+    margin-top: 20px;
+}
+    
+.queue_class{
+    height: 100vh;
+    overflow: scroll;
+}
+.left_wala_class{
+    height: 100vh;
+    overflow: scroll;
+
+}
+
+
+
+
+.queue_wala_class::-webkit-scrollbar {
+    display: none;
+  }
+
+.player{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(16, 9, 61);
+}
+
+
+
+.sub_1{
+    display: flex;
+
+
+}
+.sub_1 img{
+    height: 50px;
+    width: 50px;
+    margin-right: 5px;
+}
+
+.sub_1_text{
+    color: rgb(159, 162, 164);
+    
+    
+    
+}
+.sub_1_text h5{
+    font-size: 9px;
+    margin-top: -18px;
+
+}
+
+.sub_1_icons{
+    margin-left: 10px;
+
+}
+
+.sub_1_icons i{
+    color: rgb(107, 110, 113);
+}
+
+#player_sub_2_row{
+   position: relative;
+   left: 15px;
+   margin-top: 5px;
+}
+#player_sub_2_row_2{
+    position: relative;
+    left: -55px;
+}
+#player_sub_2{
+    /* background-color: aliceblue; */
+    display: flex;
+}
+
+#player_sub_2 i{
+    margin-left: 50px;
+    color: white;
+    font-size: 20px;
+}
+
+.sub_2_progress {
+    /* display: inline !important; */
+    height: 2px !important;
+    margin-top: 15px;
+
+}
+#sub_2_row_2{
+    display: flex;
+}
+
+.sub_3_icons{
+    color: white;
+    margin-right: 10px;
+}
+
+.sub_3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#dot_circle{
+    color:white;
+    position: relative;
+    left: 241px;
+    top: 9px;
+}
+
+#dot_circle_2{
+    color: white;
+    position: relative;
+    left:38px;
+    top: 2px;
+}
+footer{
+    position: fixed;
+    /* top: 0px; */
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+    background-color: rgb(16, 9, 61);
+
+    z-index: 2;
+}
+    
+

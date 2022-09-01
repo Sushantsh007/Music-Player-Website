@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/a1b71e3fd1.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/a1b71e3fd1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <title>Music player</title>
+</head>
+
+<body>
+    <!-- nav bar -->
+    <div class="nav_bar">
+        <div class="nav_left">
+            <div class="nav_icon">
+                <div class="nav_gola"></div>
+                <i class="fa-solid fa-music"></i>
+            </div>
+            <div class="nav_left_text">
+                <p>Sanky</p>
+                <h3>Studio</h3>
+            </div>
+
+            <a href="#" id="nav_fav">Favourites</a>
+
+        </div>
+        <div class="nav_right">
+            <form action="#">
+                <button type="button" id="search_btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <input type="text" id="nav-search" placeholder="Search">
+                <button type="button" id="nav_right_mic"><i class="fa-solid fa-microphone"></i></button>
+
+            </form>
+            <div class="nav_right_icon">
+                <i class="fa-solid fa-bell"></i>
+
+            </div>
+            <div class="nav_right_pic">
+
+            </div>
+
+
+
+
+        </div>
+
+    </div>
+
+
+    <!-- yaha se start hoga  -->
+
+    <div class="container">
+        <!-- phal row -->
+        <div class="row">
+            <!-- left wala portion -->
+            <div class="col-9 left_wala_class">
+                <div class="row " id="row_1">
+                    <div class="col" id="row_1_col_1">
+                        <img src="images/karan aujla.jpg" alt="" style="height: 200px;width: 250px;" id="karan">
+                        <img src="images/arjit singh.jpg" alt="" style="height: 200px;width: 250px;" id="arijit">
+                        <img src="images/sidhu moose wala.jpg" alt="" style="height: 200px;width: 250px;" id="sidhu">
+                    </div>
+                </div>
+                <div class="row" id="row_2">
+                    <div class="col">
+                        <h5 id="row_2_heading">Latest Release</h5>
+                    </div>
+
+
+                </div>
+                <div class="row" id="row_3">
+                    <div class="col-6">
+                        <div class="row">
+                            <div class="col d-flex justify-content-space-between">
+                                <div class="left d-flex">
+                                    <div class="pic"></div>
+                                    <div class="left_text">
+                                        <h6>Level</h6>
+                                        <p>12 August 2022</p>
+                                    </div>
+
+                                </div>
+                                <div class="rig">
+                                    <a href="#" id="rig_a"><i class="fa-solid fa-ellipsis"></i></a>
+                                    <p>4:02</p>
+
+                                </div>
+
+
+                            </div>
+
+                        </div>
+                        <div class="row">
+                            <div class="col d-flex justify-content-space-between">
+                                <div class="left d-flex">
+                                    <div class="pic"></div>
+                                    <div class="left_text">
+                                        <h6>Level</h6>
+                                        <p>12 August 2022</p>
+                                    </div>
+
+                                </div>
+                                <div class="rig">
+                                    <a href="#" id="rig_a"><i class="fa-solid fa-ellipsis"></i></a>
+                                    <p>4:02</p>
+
+                                </div>
+
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="col-6">
+                        <div class="row">
+                            <div class="col d-flex justify-content-space-between">
+                                <div class="left d-flex">
+                                    <div class="pic"></div>
+                                    <div class="left_text">
+                                        <h6>Level</h6>
+                                        <p>12 August 2022</p>
+                                    </div>
+
+                                </div>
+                                <div class="rig">
+                                    <a href="#" id="rig_a"><i class="fa-solid fa-ellipsis"></i></a>
+                                    <p>4:02</p>
+
+                                </div>
+
+
+                            </div>
+
+                        </div>
+                        <div class="row">
+                            <div class="col d-flex justify-content-space-between">
+                                <div class="left d-flex">
+                                    <div class="pic"></div>
+                                    <div class="left_text">
+                                        <h6>Level</h6>
+                                        <p>12 August 2022</p>
+                                    </div>
+
+                                </div>
+                                <div class="rig">
+                                    <a href="#" id="rig_a"><i class="fa-solid fa-ellipsis"></i></a>
+                                    <p>4:02</p>
+
+                                </div>
+
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+                <!-- dusra row jo multiple singers waala -->
+
+                <div class="row" id="row_4">
+                    <div class="col">
+                        <h5 id="row_2_heading">Popular Artist</h5>
+                    </div>
+                </div>
+
+                <div class="row" id="artistwala_row">
+                    <div class="col-2" id="artist_images_1">
+                        <img src="images/ap dhillon.jpg" class="artist_image img-fluid">
+                        <p class="text-white xy">Ap dhillon</p>
+
+                    </div>
+                    <div class="col-2">
+                        <img src="images/sriram.jpg" class="artist_image img-fluid">
+                        <p class="text-white xy">Sid Sriram</p>
+                    </div>
+                    <div class="col-2">
+                        <img src="images/arjit singh.jpg" class="artist_image img-fluid">
+                        <p class="text-white xy">Ariji Singh</p>
+
+                    </div>
+                    <div class="col-2">
+                        <img src="images/diljit.jpg" class="artist_image img-fluid" ;>
+                        <p class="text-white xy">Diljit Singh</p>
+
+                    </div>
+                    <div class="col-2">
+                        <img src="images/gurinder gill.jpg" alt="" class="artist_image img-fluid">
+                        <p class="text-white xy">Gurinder Gill</p>
+                    </div>
+                    <div class="col-2">
+                        <img src="images/sidhu moose wala.jpg" class="artist_image img-fluid">
+                        <p class="text-white xy">Moose Wala</p>
+                    </div>
+                </div>
+
+
+
+
+                <!-- Stations section -->
+
+                <div class="row" id="station_row">
+                    <div class="col-2" id="station_1">
+                        <img src="images/music_station1.jpg">
+                    </div>
+
+                    <div class="col-1.6 station_col" id="baki_stations">
+                        <p class="text-white">Love</p>
+
+
+                    </div>
+                    <div class="col-1.6 station_col" id="baki_stations_2">
+                        <p class="text-white">retro</p>
+
+                    </div>
+                    <div class="col-1.6 station_col" id="baki_stations_3">
+                        <p class="text-white">chill</p>
+
+                    </div>
+                    <div class="col-1.6 station_col" id="baki_stations_4">
+                        <p class="text-white">Workout</p>
+
+                    </div>
+                    <div class="col-1.6 station_col" id="baki_stations_5">
+                        <p class="text-white">ROck</p>
+
+                    </div>
+                    <div class="col-1.6 station_col" id="baki_stations_6">
+                        <P class="text-white">pop</P>
+
+                    </div>
+                </div>
+
+
+
+                <!-- mood section-->
+
+                <div class="row" id="mood_row">
+                    <div class="col-4">
+                        <div class="mod_image">
+                            <img src="images/party.jpg">
+
+                        </div>
+                        <p class="mood_type text-white">party</p>
+
+
+
+                    </div>
+                    <div class="col-4">
+                        <div class="mod_image">
+                            <img src="images/electronic.jpg">
+                        </div>
+                        <p class="mood_type text-white">Electronic</p>
+
+                    </div>
+                    <div class="col-4">
+                        <div class="mod_image">
+                            <img src="images/road trip.jpg" alt="">
+                        </div>
+                        <p class="mood_type text-white">road trip</p>
+
+                    </div>
+
+
+
+
+
+                </div>
+
+
+                <!-- latest english wala -->
+
+                <div class="row" id="latest_english">
+                    <p id="latest">Latest English</p>
+
+                </div>
+                <div class="row"id="abc">
+                    <div class="col-2">
+                        <div class="lat_img">
+                            <img src="images/kk.jpg">
+                        </div>
+                        <p class="text-white">Onisem</p>
+                        <p class="text-white xyz">12 Aug 2022</p>
+
+                    </div>
+                    <div class="col-2">
+                        <div class="lat_img">
+                            <img src="images/shreya.jpg">
+                        </div>
+                        <p class="text-white">Onisem</p>
+                        <p class="text-white xyz">12 Aug 2022</p>
+
+                    </div>
+                    <div class="col-2">
+                        <div class="lat_img">
+                            <img src="images/kanikakapoor.jpg">
+                        </div>
+                        <p class="text-white">Onisem</p>
+                        <p class="text-white xyz">12 Aug 2022</p>
+
+                    </div>
+                    <div class="col-2">
+                        <div class="lat_img">
+                            <img src="images/sonu nigam.jpeg">
+                        </div>
+                        <p class="text-white">Onisem</p>
+                        <p class="text-white xyz">12 Aug 2022</p>
+
+                    </div>
+                    <div class="col-2">
+                        <div class="lat_img">
+                            <img src="images/ap dhillon.jpg">
+                        </div>
+                        <p class="text-white">Onisem</p>
+                        <p class="text-white xyz">12 Aug 2022</p>
+                    </div>
+                    <div class="col-2">
+                        <div class="lat_img">
+                            <img src="images/papon.jpg">
+                        </div>
+                        <p class="text-white">Onisem</p>
+                        <p class="text-white xyz">12 Aug 2022</p>
+
+                    </div>
+                </div>
+
+
+                <!-- hindi wala section -->
+                <div class="row" id="latest_hindi">
+                    <p id="latest">Latest Hindi</p>
+
+                </div>
+                <div class="row">
+                    <div class="col-2">
+                        <div class="lat_img">
+                            <img src="images/gippy.jpg">
+                        </div>
+                        <p class="text-white">Onisem</p>
+                        <p class="text-white xyz">12 Aug 2022</p>
+
+                    </div>
+                    <div class="col-2">
+                        <div class="lat_img">
+                            <img src="images/jass manak.jpg">
+                        </div>
+                        <p class="text-white">Onisem</p>
+                        <p class="text-white xyz">12 Aug 2022</p>
+
+                    </div>
+                    <div class="col-2">
+                        <div class="lat_img">
+                            <img src="images/kanikakapoor.jpg">
+                        </div>
+                        <p class="text-white">Onisem</p>
+                        <p class="text-white xyz">12 Aug 2022</p>
+
+                    </div>
+                    <div class="col-2">
+                        <div class="lat_img">
+                            <img src="images/karan randhawa.jpg">
+                        </div>
+                        <p class="text-white">Onisem</p>
+                        <p class="text-white xyz">12 Aug 2022</p>
+
+                    </div>
+                    <div class="col-2">
+                        <div class="lat_img">
+                            <img src="images/sukhi.jpg">
+                        </div>
+                        <p class="text-white">Onisem</p>
+                        <p class="text-white xyz">12 Aug 2022</p>
+                    </div>
+                    <div class="col-2">
+                        <div class="lat_img">
+                            <img src="images/honey.jpg">
+                        </div>
+                        <p class="text-white">Onisem</p>
+                        <p class="text-white xyz">12 Aug 2022</p>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+            <!-- queue wala secttion -->
+            <div class="col-3 queue_class">
+                <div class="row ">
+                    <div class="col" id="queue-row">
+                        <div class="left">
+                            <p class="text-white" id="queue_text">Queue</p>
+
+                        </div>
+                        <div class="right">
+                            <div class="dropdown right_queue">
+                                <button class="btn btn-secondary dropdown-toggle" type="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Queue
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row" id="queue_row_99">
+                    <div class="col">
+                        <div class="row">
+                            <div class="col" id="row_2_queue">
+                                <div class="row_2_queue_left">
+                                    <p class="text-white" id="phla_p">01</p>
+                                    <img src="images/arjit singh.jpg">
+                                    <div class="row_text">
+                                        <p class="text-white" id="dusra_p">Dont Test</p>
+                                        <p id="teesra_p">GG</p>
+
+                                    </div>
+
+
+
+                                </div>
+                                <div class="row_2_queue_right">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" id="queue_row_99">
+                    <div class="col">
+                        <div class="row">
+                            <div class="col" id="row_2_queue">
+                                <div class="row_2_queue_left">
+                                    <p class="text-white" id="phla_p">01</p>
+                                    <img src="images/diljit.jpg">
+                                    <div class="row_text">
+                                        <p class="text-white" id="dusra_p">Dont Test</p>
+                                        <p id="teesra_p">GG</p>
+
+                                    </div>
+
+
+
+                                </div>
+                                <div class="row_2_queue_right">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" id="queue_row_99">
+                    <div class="col">
+                        <div class="row">
+                            <div class="col" id="row_2_queue">
+                                <div class="row_2_queue_left">
+                                    <p class="text-white" id="phla_p">01</p>
+                                    <img src="images/sidhu moose wala.jpg">
+                                    <div class="row_text">
+                                        <p class="text-white" id="dusra_p">Dont Test</p>
+                                        <p id="teesra_p">GG</p>
+
+                                    </div>
+
+
+
+                                </div>
+                                <div class="row_2_queue_right">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" id="queue_row_99">
+                    <div class="col">
+                        <div class="row">
+                            <div class="col" id="row_2_queue">
+                                <div class="row_2_queue_left">
+                                    <p class="text-white" id="phla_p">01</p>
+                                    <img src="images/karan aujla.jpg">
+                                    <div class="row_text">
+                                        <p class="text-white" id="dusra_p">Dont Test</p>
+                                        <p id="teesra_p">GG</p>
+
+                                    </div>
+
+
+
+                                </div>
+                                <div class="row_2_queue_right">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" id="queue_row_99">
+                    <div class="col">
+                        <div class="row">
+                            <div class="col" id="row_2_queue">
+                                <div class="row_2_queue_left">
+                                    <p class="text-white" id="phla_p">01</p>
+                                    <img src="images/karan aujla.jpg">
+                                    <div class="row_text">
+                                        <p class="text-white" id="dusra_p">Dont Test</p>
+                                        <p id="teesra_p">GG</p>
+
+                                    </div>
+
+
+
+                                </div>
+                                <div class="row_2_queue_right">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" id="queue_row_99">
+                    <div class="col">
+                        <div class="row">
+                            <div class="col" id="row_2_queue">
+                                <div class="row_2_queue_left">
+                                    <p class="text-white" id="phla_p">01</p>
+                                    <img src="images/karan aujla.jpg">
+                                    <div class="row_text">
+                                        <p class="text-white" id="dusra_p">Dont Test</p>
+                                        <p id="teesra_p">GG</p>
+
+                                    </div>
+
+
+
+                                </div>
+                                <div class="row_2_queue_right">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" id="queue_row_99">
+                    <div class="col">
+                        <div class="row">
+                            <div class="col" id="row_2_queue">
+                                <div class="row_2_queue_left">
+                                    <p class="text-white" id="phla_p">01</p>
+                                    <img src="images/karan aujla.jpg">
+                                    <div class="row_text">
+                                        <p class="text-white" id="dusra_p">Dont Test</p>
+                                        <p id="teesra_p">GG</p>
+
+                                    </div>
+
+
+
+                                </div>
+                                <div class="row_2_queue_right">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" id="queue_row_99">
+                    <div class="col">
+                        <div class="row">
+                            <div class="col" id="row_2_queue">
+                                <div class="row_2_queue_left">
+                                    <p class="text-white" id="phla_p">01</p>
+                                    <img src="images/karan aujla.jpg">
+                                    <div class="row_text">
+                                        <p class="text-white" id="dusra_p">Dont Test</p>
+                                        <p id="teesra_p">GG</p>
+
+                                    </div>
+
+
+
+                                </div>
+                                <div class="row_2_queue_right">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" id="queue_row_99">
+                    <div class="col">
+                        <div class="row">
+                            <div class="col" id="row_2_queue">
+                                <div class="row_2_queue_left">
+                                    <p class="text-white" id="phla_p">01</p>
+                                    <img src="images/karan aujla.jpg">
+                                    <div class="row_text">
+                                        <p class="text-white" id="dusra_p">Dont Test</p>
+                                        <p id="teesra_p">GG</p>
+
+                                    </div>
+
+
+
+                                </div>
+                                <div class="row_2_queue_right">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" id="queue_row_99">
+                    <div class="col">
+                        <div class="row">
+                            <div class="col" id="row_2_queue">
+                                <div class="row_2_queue_left">
+                                    <p class="text-white" id="phla_p">01</p>
+                                    <img src="images/arjit singh.jpg">
+                                    <div class="row_text">
+                                        <p class="text-white" id="dusra_p">Dont Test</p>
+                                        <p id="teesra_p">GG</p>
+
+                                    </div>
+
+
+
+                                </div>
+                                <div class="row_2_queue_right">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><div class="row" id="queue_row_99">
+                    <div class="col">
+                        <div class="row">
+                            <div class="col" id="row_2_queue">
+                                <div class="row_2_queue_left">
+                                    <p class="text-white" id="phla_p">01</p>
+                                    <img src="images/arjit singh.jpg">
+                                    <div class="row_text">
+                                        <p class="text-white" id="dusra_p">Dont Test</p>
+                                        <p id="teesra_p">GG</p>
+
+                                    </div>
+
+
+
+                                </div>
+                                <div class="row_2_queue_right">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><div class="row" id="queue_row_99">
+                    <div class="col">
+                        <div class="row">
+                            <div class="col" id="row_2_queue">
+                                <div class="row_2_queue_left">
+                                    <p class="text-white" id="phla_p">01</p>
+                                    <img src="images/arjit singh.jpg">
+                                    <div class="row_text">
+                                        <p class="text-white" id="dusra_p">Dont Test</p>
+                                        <p id="teesra_p">GG</p>
+
+                                    </div>
+
+
+
+                                </div>
+                                <div class="row_2_queue_right">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><div class="row" id="queue_row_99">
+                    <div class="col">
+                        <div class="row">
+                            <div class="col" id="row_2_queue">
+                                <div class="row_2_queue_left">
+                                    <p class="text-white" id="phla_p">01</p>
+                                    <img src="images/arjit singh.jpg">
+                                    <div class="row_text">
+                                        <p class="text-white" id="dusra_p">Dont Test</p>
+                                        <p id="teesra_p">GG</p>
+
+                                    </div>
+
+
+
+                                </div>
+                                <div class="row_2_queue_right">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><div class="row" id="queue_row_99">
+                    <div class="col">
+                        <div class="row">
+                            <div class="col" id="row_2_queue">
+                                <div class="row_2_queue_left">
+                                    <p class="text-white" id="phla_p">01</p>
+                                    <img src="images/arjit singh.jpg">
+                                    <div class="row_text">
+                                        <p class="text-white" id="dusra_p">Dont Test</p>
+                                        <p id="teesra_p">GG</p>
+
+                                    </div>
+
+
+
+                                </div>
+                                <div class="row_2_queue_right">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><div class="row" id="queue_row_99">
+                    <div class="col">
+                        <div class="row">
+                            <div class="col" id="row_2_queue">
+                                <div class="row_2_queue_left">
+                                    <p class="text-white" id="phla_p">01</p>
+                                    <img src="images/arjit singh.jpg">
+                                    <div class="row_text">
+                                        <p class="text-white" id="dusra_p">Dont Test</p>
+                                        <p id="teesra_p">GG</p>
+
+                                    </div>
+
+
+
+                                </div>
+                                <div class="row_2_queue_right">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><div class="row" id="queue_row_99">
+                    <div class="col">
+                        <div class="row">
+                            <div class="col" id="row_2_queue">
+                                <div class="row_2_queue_left">
+                                    <p class="text-white" id="phla_p">01</p>
+                                    <img src="images/arjit singh.jpg">
+                                    <div class="row_text">
+                                        <p class="text-white" id="dusra_p">Dont Test</p>
+                                        <p id="teesra_p">GG</p>
+
+                                    </div>
+
+
+
+                                </div>
+                                <div class="row_2_queue_right">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><div class="row" id="queue_row_99">
+                    <div class="col">
+                        <div class="row">
+                            <div class="col" id="row_2_queue">
+                                <div class="row_2_queue_left">
+                                    <p class="text-white" id="phla_p">01</p>
+                                    <img src="images/arjit singh.jpg">
+                                    <div class="row_text">
+                                        <p class="text-white" id="dusra_p">Dont Test</p>
+                                        <p id="teesra_p">GG</p>
+
+                                    </div>
+
+
+
+                                </div>
+                                <div class="row_2_queue_right">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><div class="row" id="queue_row_99">
+                    <div class="col">
+                        <div class="row">
+                            <div class="col" id="row_2_queue">
+                                <div class="row_2_queue_left">
+                                    <p class="text-white" id="phla_p">01</p>
+                                    <img src="images/arjit singh.jpg">
+                                    <div class="row_text">
+                                        <p class="text-white" id="dusra_p">Dont Test</p>
+                                        <p id="teesra_p">GG</p>
+
+                                    </div>
+
+
+
+                                </div>
+                                <div class="row_2_queue_right">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><div class="row" id="queue_row_99">
+                    <div class="col">
+                        <div class="row">
+                            <div class="col" id="row_2_queue">
+                                <div class="row_2_queue_left">
+                                    <p class="text-white" id="phla_p">01</p>
+                                    <img src="images/arjit singh.jpg">
+                                    <div class="row_text">
+                                        <p class="text-white" id="dusra_p">Dont Test</p>
+                                        <p id="teesra_p">GG</p>
+
+                                    </div>
+
+
+
+                                </div>
+                                <div class="row_2_queue_right">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><div class="row" id="queue_row_99">
+                    <div class="col">
+                        <div class="row">
+                            <div class="col" id="row_2_queue">
+                                <div class="row_2_queue_left">
+                                    <p class="text-white" id="phla_p">01</p>
+                                    <img src="images/arjit singh.jpg">
+                                    <div class="row_text">
+                                        <p class="text-white" id="dusra_p">Dont Test</p>
+                                        <p id="teesra_p">GG</p>
+
+                                    </div>
+
+
+
+                                </div>
+                                <div class="row_2_queue_right">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                
+
+                
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+    <footer>
+        <div class="player">
+            <div class="sub_1">
+
+                <img src="images/arjit singh.jpg">
+                <div class="sub_1_text">
+                    <p>Maa belle</p>
+                    <h5>Desi Crew</h5>
+                </div>
+                <div class="sub_1_icons">
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-solid fa-ban"></i>
+                </div>
+
+
+
+
+            </div>
+            <div class="sub_2">
+                <div class="row" id="player_sub_2_row">
+                    <div class="col" id="player_sub_2">
+                        <i class="fa-sharp fa-solid fa-shuffle"></i>
+                        <i class="fa-sharp fa-solid fa-backward-step"></i>
+                        <i class="fa-regular fa-circle-pause"></i>
+                        <i class="fa-sharp fa-solid fa-forward-step"></i>
+                        <i class="fa-solid fa-repeat"></i>
+
+                    </div>
+                </div>
+                <div class="row" id="player_sub_2_row_2">
+                    <div class="col" id="sub_2_row_2">
+                        <p class="text-white" style="margin-right:10px ;">1:52</p>
+                        <i class="fa-solid fa-circle" id="dot_circle"></i>
+                        <div class="progress sub_2_progress" style="width:450px;">
+                            <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 50%"
+                                aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <p class="text-white" style="margin-left:10px ;">4:22</p>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="sub_3">
+                <div class="sub_3_icons">
+                    <i class="fa-solid fa-volume-high"></i>
+                    <i class="fa-solid fa-circle" id="dot_circle_2"></i>
+
+                </div>
+                
+                <div class="progress sub_2_progress" style="width:50px;margin-top: 5px;">
+                    <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 50% "
+                        aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+
+
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+    <!-- second dabba -->
+
+
+
+
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
